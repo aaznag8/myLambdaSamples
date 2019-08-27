@@ -55,9 +55,9 @@ public class main {
                 .peek(System.out::println)
                 .collect(Collectors.toList());
 
-//        long i = topNames.stream().map(s -> s.substring(0,1).toUpperCase().concat(s.substring(1,s.length()))
-//        ).filter(s -> s.startsWith("A")).count();
-//        System.out.println("number of names starting with A: " + i);
+        long i = topNames.stream().map(s -> s.substring(0,1).toUpperCase().concat(s.substring(1,s.length()))
+        ).filter(s -> s.startsWith("A")).count();
+        System.out.println("number of names starting with A: " + i);
     }
 
     public static String applyFc(Function<String, String> fc, String str) {
